@@ -3,3 +3,6 @@ all:
 
 debug:
 	gcc  -g main.c -o gmirror_d  `pkg-config --cflags gtk4 --libs gtk4`
+
+parser:
+	gcc parse-markup.c -o parse

@@ -3,6 +3,7 @@
 #include <string.h>
 #include <string.h>
 
+
 const gchar* TEXT = "<span foreground=\"blue\" size=\"x-large\">Blue text</span> is <i>cool</i>!";
 
 static void print_hello (GtkWidget *widget,              gpointer   data)
@@ -42,7 +43,7 @@ static int command_line (GtkApplication *app,  GApplicationCommandLine *cmdline)
   
   
   GtkWidget *label = gtk_label_new(NULL);
-  gtk_label_set_markup(GTK_LABEL(label), "<span foreground=\"blue\" size=\"x-large\">Blue text</span> is <i>cool</i>!\n\nlskdjfskljdfsdlkfsalkdjfslkdfljsd");
+  gtk_label_set_markup(GTK_LABEL(label), "<span weight=\"bold\" size=\"x-large\">Blue text</span> is <i>cool</i>!\n\nlskdjfskljdfsdlkfsalkdjfslkdfljsd");
   
   PangoLayout* label_layout = gtk_label_get_layout((GtkLabel*)label);
   pango_layout_set_alignment(label_layout, PANGO_ALIGN_RIGHT);
