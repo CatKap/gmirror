@@ -1,0 +1,9 @@
+Package: gmirror
+Version: 0.1.1 
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 1024
+Maintainer: github.com/CatKap 
+Description: Simple gtk4.0 app to vizualize text from cli

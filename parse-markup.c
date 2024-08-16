@@ -35,7 +35,7 @@ int main(int argc, char** argv)
     printf("Using stdin\n");
     f = stdin; 
   } else {
-    f = fopen(arg[1], "r");
+    f = fopen(argv[1], "r");
     if(!f)
     {
       printf("Cannot open file %s\n", argv[1]);
